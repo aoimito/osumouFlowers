@@ -2,7 +2,6 @@ body {
   margin: 80px 0 0;
   line-height: 2;
   font-size: 16px;
-  /* padding-top: 80px; */
 }
 
 a {
@@ -31,7 +30,7 @@ header .container {
 }
 
 header h1 {
-  margin: 0;
+  margin: 8px 0 0;
   padding: 0;
   line-height: 64px;
 }
@@ -277,7 +276,7 @@ main p {
 }
 
 ul.menuList {
-  margin: 0 auto;
+  margin: 0 auto 32px;
   padding: 0;
   list-style: none;
 }
@@ -313,7 +312,7 @@ ul.menuList {
 
 iframe {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   height: 220px;
 }
 
@@ -350,11 +349,34 @@ footer img {
 }
 
 @media (min-width: 600px) {
+  .sp-menu {
+    display: none;
+  }
+
   body {
-    margin: 80px 0 0;
+    margin: 110px 0 0;
     line-height: 2;
     font-size: 16px;
-    /* padding-top: 80px; */
+    /* padding-top: 110px; */
+  }
+
+  #section1 {
+    padding-top: 110px;
+    margin-top: -110px;
+  }
+  
+  #section2 {
+    padding-top: 110px;
+    margin-top: -110px;
+  }
+  
+  #section3 {
+    padding-top: 110px;
+    margin-top: -110px;
+  }
+  #section4 {
+    padding-top: 110px;
+    margin-top: -110px;
   }
   
   header {
@@ -362,7 +384,8 @@ footer img {
   }
   
   header .container {
-    display: flex;
+    /* display: flex; */
+    justify-content: center;
     width: 100%;
     display: block;
     background: #fff;
@@ -380,47 +403,38 @@ footer img {
   }
   
   header h1 img {  
-    width: 440px;
+    width: 400px;
     margin: 0;
     line-height: 64px;
     vertical-align: bottom;
   }  
 
-  header p {
-    margin: 0 0 16px;
-  }
-
+  
   .pc-menu {
     display: block;
-    margin: 0 auto;
   }
   
   
-
   .pc-menu ul {
     list-style: none;
-    margin: 0 auto 8px;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: center;
   }
-
+  
   .pc-menu a {
     display: block;
     width: 80px;
-    margin: 8px;
+    /* font-size: 14px; */
     text-align: center;
     text-decoration: none;
     cursor: pointer; 
   }
 
-  .pc-menu a:hover {
-    background: #ccc;
-  }
-
-  .sp-menu {
-    display: none;
-  }
+  /* header p {
+    margin-top: 8px;
+  } */
 
   .carousel {
     width: 100%;
@@ -431,6 +445,8 @@ footer img {
     position: relative;
   }
 
+
+
   ul.menuList {
     display: flex;
     justify-content: space-between;
@@ -440,27 +456,6 @@ footer img {
   .menuList li {
     margin: 0 8px;
   }
-
-
-  /* div.info {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-  }
-
-  div.map {
-    width: 40%;
-    height: 240px;
-    margin-right: auto;
-  }
-  
-  div.goto {
-    width: 60%;
-    text-align: left;
-    margin-left: 16px;
-    margin-right: auto;
-  } */
 
 }
 
