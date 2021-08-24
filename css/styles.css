@@ -336,8 +336,7 @@ footer {
   height: 120px;
   background: black;
   margin: 0;
-  padding: 64px;
-  padding: 0 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
